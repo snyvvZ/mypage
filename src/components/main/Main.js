@@ -1,10 +1,11 @@
-import React from 'react';
-import MainUser from './MainUser';
-import MainUtil from './MainUtil';
-import mainData from '../../mainData';
+import React from "react";
+import MainUser from "./MainUser";
+import MainUtil from "./MainUtil";
+import mainData from "../../mainData";
 
-const userData = mainData.data.contents[0];
-const UtilData = mainData.data.contents[1];
+const main = mainData.data.contents;
+const userData = main.find((item) => item.type === "loginProfile");
+const UtilData = main.find((item) => item.type === "profileSub");
 
 const Main = () => {
   return (
