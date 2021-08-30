@@ -56,8 +56,6 @@ const StyledThumbnail = styled.a`
 `;
 
 const MainUser = ({ data }) => {
-  console.log(data);
-
   return (
     <StyledUser>
       <StyledInformation>

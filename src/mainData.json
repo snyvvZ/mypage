@@ -29,24 +29,28 @@
                       "title": "적립금",
                       "total": "3,334",
                       "imageURL": "",
+                      "iconName": "Money",
                       "linkURL": "https://m.store.musinsa.com/app/mypage/point"
                   },
                   {
                       "title": "포인트",
                       "total": "3,334",
                       "imageURL": "",
+                      "iconName": "Point",
                       "linkURL": "https://my.musinsa.com/member/v1/m/point"
                   },
                   {
                       "title": "쿠폰",
                       "total": "0",
                       "imageURL": "",
+                      "iconName": "Coupon",
                       "linkURL": "https://m.store.musinsa.com/app/mypage/coupon_available"
                   },
                   {
                       "title": "후기작성",
                       "total": "0",
                       "imageURL": "",
+                      "iconName": "Review",
                       "linkURL": "https://m.store.musinsa.com/app/mypage/write_review"
                   }
               ]
