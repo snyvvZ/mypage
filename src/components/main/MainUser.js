@@ -7,22 +7,25 @@ const StyledUser = styled.section`
   padding: 20px 15px 42px 15px;
 `;
 
-const StyledInformation = styled.div``;
+const StyledInformation = styled.div`
+  margin-right: 40px;
+`;
 
 const StyledTitle = styled.h1`
-  display: flex;
-  align-items: center;
-  margin-right: 40px;
-
   > a {
-    font-size: 30px;
-    line-height: 39px;
-    word-break: break-all;
-  }
+    display: flex;
+    align-items: center;
 
-  > svg {
-    flex: none;
-    margin-left: 2px;
+    > strong {
+      font-size: 30px;
+      line-height: 39px;
+      word-break: break-all;
+    }
+
+    > svg {
+      flex: none;
+      margin-left: 2px;
+    }
   }
 `;
 
@@ -44,6 +47,7 @@ const StyledThumbnail = styled.a`
   display: block;
   width: 80px;
   height: 80px;
+  overflow: hidden;
   margin-left: auto;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 100%;
@@ -60,13 +64,13 @@ const MainUser = ({ data }) => {
     <StyledUser>
       <StyledInformation>
         <StyledTitle>
-          <a href={data.linkURL} aria-label="회원정보 수정 페이지로 이동">
-            {data.title}
+          <a href={data.linkUrl} aria-label="회원정보 수정 페이지로 이동">
+            <strong>{data.title}</strong>
+            <Ic14LineArrowRight />
           </a>
-          <Ic14LineArrowRight />
         </StyledTitle>
         <StyledLevel
-          href={data.benefitLinkURL}
+          href={data.benefitLinkUrl}
           aria-label="회원혜택 페이지로 이동"
         >
           <span>{data.level}</span>
@@ -76,10 +80,10 @@ const MainUser = ({ data }) => {
       </StyledInformation>
 
       <StyledThumbnail
-        href={data.linkURL}
+        href={data.linkUrl}
         aria-label="회원정보 수정 페이지로 이동"
       >
-        <img src={data.profileImageURL} alt={`{data.title}의 프로필 이미지`} />
+        <img src={data.profileImageUrl} alt={`{data.title}의 프로필 이미지`} />
       </StyledThumbnail>
     </StyledUser>
   );

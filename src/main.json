@@ -1,0 +1,231 @@
+{
+  "data": {
+    "selfCertify": true,
+    "cartCount": 23,
+    "hashId": "해시아이디",
+    "contents": [
+      {
+        "type": "loginProfile",
+        "title": "닉네임을 잃어버린 시냥이",
+        "level": "LV.5",
+        "levelName": "플래티넘",
+        "benefitLinkUrl": "https://my.musinsa.com/member/v2/m/benefit",
+        "linkUrl": "https://my.musinsa.com/member/v1/m/mypage",
+        "profileImageUrl": "https://image.msscdn.net/mfile_s01/_simbols/snyvvv.jpg",
+        "snap": {
+          "role": "BASIC",
+          "followerCount": 30,
+          "followerCountDisplay": "팔로워 30",
+          "followerLinkUrl": "https://www.musinsa.com/snap/profile/해시아이디/follow?type=follower",
+          "followingCount": 20,
+          "followingCountDisplay": "팔로잉 20",
+          "followingLinkUrl": "https://www.musinsa.com/snap/profile/해시아이디/follow?type=following",
+          "userSnapList": []
+        }
+      },
+      {
+        "type": "profileSub",
+        "contents": [
+          {
+            "code": "saving",
+            "title": "적립금",
+            "total": "3,334",
+            "imageUrl": "",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/point"
+          },
+          {
+            "code": "point",
+            "title": "포인트",
+            "total": "3,334",
+            "imageUrl": "",
+            "linkUrl": "https://my.musinsa.com/member/v1/m/point"
+          },
+          {
+            "code": "coupon",
+            "title": "쿠폰",
+            "total": "0",
+            "imageUrl": "",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/coupon_available"
+          },
+          {
+            "code": "review",
+            "title": "후기작성",
+            "total": "0",
+            "imageUrl": "",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/write_review"
+          }
+        ]
+      },
+      {
+        "type": "banner",
+        "contents": [
+          {
+            "idx": "19384",
+            "extra1": "",
+            "extra2": "",
+            "extra3": "",
+            "imageFile": "https://image.msscdn.net/images/event_banner/2021031011483000000083831.png",
+            "Url": "https://m.store.musinsa.com/app/mypage/coupon_available"
+          },
+          {
+            "idx": "1231232",
+            "extra1": "",
+            "extra2": "",
+            "extra3": "",
+            "imageFile": "https://image.msscdn.net/images/event_banner/2021031011483000000083831.png",
+            "Url": "https://m.store.musinsa.com/app/mypage/coupon_available"
+          }
+        ]
+      },
+      {
+        "type": "order",
+        "title": "주문/배송조회",
+        "linkUrl": "https://m.store.musinsa.com/app/mypage/order_list_opt",
+        "contents": [
+          {
+            "title": "입금/결제",
+            "total": "0",
+            "linkUrl": "[https://m.store.musinsa.com/app/mypage/order_list_opt?state_type=ord_1&ord_state=1%5E5%5E10"
+          },
+          {
+            "title": "배송중",
+            "total": "0",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/order_list_opt?state_type=ord_2&ord_state=20%5E30%5E35"
+          },
+          {
+            "title": "배송완료",
+            "total": "0",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/order_list_opt?state_type=ord_3&ord_state=40"
+          },
+          {
+            "title": "구매확정",
+            "total": "0",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/order_list_opt?state_type=ord_4&ord_state=50"
+          }
+        ]
+      },
+      {
+        "type": "order",
+        "title": "취소/교환/환불",
+        "linkUrl": "https://m.store.musinsa.com/app/mypage/clm_list_opt",
+        "contents": [
+          {
+            "title": "교환",
+            "total": "0",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/clm_list_opt?state_type=exchange&ord_state=40%5E50"
+          },
+          {
+            "title": "교환완료",
+            "total": "0",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/clm_list_opt?state_type=clm_2&ord_state=60%5E26"
+          },
+          {
+            "title": "환불",
+            "total": "0",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/clm_list_opt?state_type=clm_3&ord_state=41%5E51"
+          },
+          {
+            "title": "환불완료",
+            "total": "0",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/clm_list_opt?state_type=clm_4&ord_state=61"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "title": "교환/환불 방법이 궁금하신가요?",
+        "imageUrl": "",
+        "linkUrl": "https://m.store.musinsa.com/app/mypage/change_info"
+      },
+      {
+        "type": "plain",
+        "title": "활동정보",
+        "contents": [
+          {
+            "title": "마이 사이즈",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/mysize_new"
+          },
+          {
+            "title": "레플 응모 내역",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/raffle"
+          }
+        ]
+      },
+      {
+        "type": "plain",
+        "title": "신청/결제",
+        "comment": "hasMusinsaCard == true/false 에 따라 무신사 현대카드 정보 변경",
+        "contents": [
+          {
+            "title": "무신사페이 관리",
+            "linkUrl": "https://pay.musinsa.com/setting"
+          },
+          {
+            "title": "무신사 현대카드 정보",
+            "linkUrl": "https://my.musinsa.com/member/v1/m/musinsacard"
+          },
+          {
+            "title": "매장 결제 내역",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/shop_order_list"
+          },
+          {
+            "title": "재입고 알림 내역",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/restock"
+          }
+        ]
+      },
+      {
+        "type": "plain",
+        "title": "고객센터",
+        "contents": [
+          {
+            "title": "공지사항",
+            "linkUrl": "https://m.store.musinsa.com/app/cs/notice_list"
+          },
+          {
+            "title": "FAQ",
+            "linkUrl": "https://m.store.musinsa.com/app/cs/faq"
+          },
+          {
+            "title": "1:1문의",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/counsel"
+          },
+          {
+            "title": "상품문의",
+            "linkUrl": "https://m.store.musinsa.com/app/mypage/qa"
+          },
+          {
+            "title": "회원혜택",
+            "linkUrl": "https://my.musinsa.com/member/v2/m/benefit"
+          },
+          {
+            "title": "무신사 리서치",
+            "linkUrl": "https://uxresearch.musinsa.com"
+          },
+          {
+            "title": "무신사 새로운 기능",
+            "linkUrl": "https://newsroom.musinsa.com/musinsa-update/updatelist"
+          }
+        ]
+      },
+      {
+        "type": "plain",
+        "title": "매거진 / 커뮤니티",
+        "contents": [
+          {
+            "title": "커뮤니티",
+            "linkUrl": "https://my.musinsa.com/member/v1/m/board"
+          },
+          {
+            "title": "친구",
+            "linkUrl": "https://my.musinsa.com/member/v1/m/friend"
+          },
+          {
+            "title": "쪽지",
+            "linkUrl": "https://my.musinsa.com/member/v1/m/paper?inBox=RECEIVED"
+          }
+        ]
+      }
+    ]
+  }
+}
