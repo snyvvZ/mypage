@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Ic14LineArrowRight, Ic18LineQuestion } from '../../icons';
+import React from "react";
+import styled from "styled-components";
+import { Ic14LineArrowRight, Ic18LineQuestion } from "../../icons";
 
 const StyledUser = styled.section`
   display: flex;
@@ -8,18 +8,24 @@ const StyledUser = styled.section`
 `;
 
 const StyledInformation = styled.div`
+  margin-right: 40px;
 `;
 
 const StyledTitle = styled.h1`
-  display: flex;
-  align-items: center;
-  margin-right: 40px;
-
   > a {
-    margin-right: 2px;
-    font-size: 30px;
-    line-height: 39px;
-    word-break: break-all;
+    display: flex;
+    align-items: center;
+
+    > strong {
+      font-size: 30px;
+      line-height: 39px;
+      word-break: break-all;
+    }
+
+    > svg {
+      flex: none;
+      margin-left: 2px;
+    }
   }
 `;
 
@@ -32,6 +38,7 @@ const StyledLevel = styled.a`
 
   > span {
     color: #777;
+    margin-right: 4px;
   }
 `;
 
@@ -40,6 +47,7 @@ const StyledThumbnail = styled.a`
   display: block;
   width: 80px;
   height: 80px;
+  overflow: hidden;
   margin-left: auto;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 100%;
@@ -56,20 +64,26 @@ const MainUser = ({ data }) => {
     <StyledUser>
       <StyledInformation>
         <StyledTitle>
-          <a href={data.linkURL} aria-label="회원정보 수정 페이지로 이동">
-            {data.title}
+          <a href={data.linkUrl} aria-label="회원정보 수정 페이지로 이동">
+            <strong>{data.title}</strong>
+            <Ic14LineArrowRight />
           </a>
-          <Ic14LineArrowRight />
         </StyledTitle>
-        <StyledLevel href={data.benefitLinkURL} aria-label="회원혜택 페이지로 이동">
+        <StyledLevel
+          href={data.benefitLinkUrl}
+          aria-label="회원혜택 페이지로 이동"
+        >
           <span>{data.level}</span>
           <em>{data.levelName}</em>
           <Ic18LineQuestion />
         </StyledLevel>
       </StyledInformation>
 
-      <StyledThumbnail href={data.linkURL} aria-label="회원정보 수정 페이지로 이동">
-        <img src={data.profileImageURL} alt={`{data.title}의 프로필 이미지`} />
+      <StyledThumbnail
+        href={data.linkUrl}
+        aria-label="회원정보 수정 페이지로 이동"
+      >
+        <img src={data.profileImageUrl} alt={`{data.title}의 프로필 이미지`} />
       </StyledThumbnail>
     </StyledUser>
   );

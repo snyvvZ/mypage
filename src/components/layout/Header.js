@@ -1,14 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-import mixins from '../../styles/mixins';
-import { Ic30StencilBag, Ic30StencilHeart, Ic30StencilSetting } from '../../icons';
+import React from "react";
+import styled from "styled-components";
+import mixins from "../../styles/mixins";
+import {
+  Ic30StencilBag,
+  Ic30StencilHeart,
+  Ic30StencilSetting,
+} from "../../icons";
 
 const StyledHeader = styled.header`
   display: flex;
   height: 50px;
   justify-content: right;
 
-  > h1, 
+  > h1,
   > h2 {
     ${mixins.blind};
   }
@@ -22,11 +26,12 @@ const StyledAnchor = styled.div`
     display: inline-flex;
     height: 40px;
     padding: 5px;
+    box-sizing: border-box;
 
     & + & {
       margin-left: 5px;
     }
-    
+
     > svg {
       vertical-align: top;
     }
