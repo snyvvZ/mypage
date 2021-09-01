@@ -15,6 +15,7 @@ const MainUtil = ({ data }) => {
     <StyledUtil>
       {data.contents.map((item) => (
         <StyledAnchor href={item.linkURL}>
+          <Ic40StencilMoney />
           {item.title}
           {item.total}
         </StyledAnchor>
