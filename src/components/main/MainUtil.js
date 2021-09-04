@@ -45,8 +45,8 @@ const StyledAnchor = styled.a`
 const MainUtil = ({ data }) => {
   return (
     <StyledUtil>
-      {data.contents.map((item) => (
-        <StyledAnchor href={item.linkUrl}>
+      {data.contents.map((item, index) => (
+        <StyledAnchor key={index} href={item.linkUrl}>
           {item.code === "saving" ? (
             <Ic40StencilMoney />
           ) : item.code === "point" ? (
