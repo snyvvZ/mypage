@@ -1,8 +1,9 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const MainBanner = ({ data }) => {
   const banner = data.contents;
-  console.log(data);
+
   if (banner.length === 0) {
     return null;
   } else if (banner.length === 1) {
