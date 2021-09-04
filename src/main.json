@@ -84,12 +84,12 @@
         "contents": [
           {
             "title": "입금/결제",
-            "total": "0",
+            "total": "2",
             "linkUrl": "[https://m.store.musinsa.com/app/mypage/order_list_opt?state_type=ord_1&ord_state=1%5E5%5E10"
           },
           {
             "title": "배송중",
-            "total": "0",
+            "total": "1",
             "linkUrl": "https://m.store.musinsa.com/app/mypage/order_list_opt?state_type=ord_2&ord_state=20%5E30%5E35"
           },
           {
@@ -105,7 +105,7 @@
         ]
       },
       {
-        "type": "order",
+        "type": "orderClaim",
         "title": "취소/교환/환불",
         "linkUrl": "https://m.store.musinsa.com/app/mypage/clm_list_opt",
         "contents": [
@@ -126,7 +126,7 @@
           },
           {
             "title": "환불완료",
-            "total": "0",
+            "total": "2",
             "linkUrl": "https://m.store.musinsa.com/app/mypage/clm_list_opt?state_type=clm_4&ord_state=61"
           }
         ]

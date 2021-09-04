@@ -44,7 +44,6 @@ const StyledBanner = styled.a`
 
 const MainBanner = ({ data }) => {
   const banner = data.contents[0];
-  console.log(banner);
 
   if (banner.length === 0) {
     return null;
@@ -56,7 +55,7 @@ const MainBanner = ({ data }) => {
             <strong>{banner.extra1}</strong>
             <span>{banner.extra2}</span>
           </figcaption>
-          <img src={banner.imageFile} />
+          <img src={banner.imageFile} alt="" />
         </figure>
       </StyledBanner>
     );
