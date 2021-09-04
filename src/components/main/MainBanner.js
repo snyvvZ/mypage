@@ -8,7 +8,9 @@ const MainBanner = ({ data }) => {
   } else if (banner.length === 1) {
     return <div>banner 1</div>;
   } else {
-    return <div>Swiper</div>;
+    return (
+      <div>Swiper</div>
+    );
   }
 };
 
