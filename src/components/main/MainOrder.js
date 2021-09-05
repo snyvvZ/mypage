@@ -29,9 +29,9 @@ const StyledOrder = styled.article`
         line-height: 30px;
 
         ${(props) =>
-          props.total === 0 &&
+          props.total === "none" &&
+          // FIXME props 적용
           css`
-            // FIXME props 적용
             color: ${variables.gray600};
           `}
       }
@@ -63,7 +63,7 @@ const MainOrder = ({ data }) => {
       <div>
         {item.contents.map((anchor, index) => (
           <a key={index} href={anchor.linkUrl}>
-            <strong total={anchor.total}>{anchor.total}</strong>
+            <strong total={anchor.total === 0 && "none"}>{anchor.total}</strong>
             <em>{anchor.title}</em>
           </a>
         ))}
