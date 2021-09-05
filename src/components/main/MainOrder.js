@@ -56,20 +56,21 @@ const StyledOrder = styled.article`
 `;
 
 const MainOrder = ({ data }) => {
-  return (
-    <StyledOrder>
-      <h2>{data.title}</h2>
+  console.log(data);
+  return data.map((item, index) => (
+    <StyledOrder key={index}>
+      <h2>{item.title}</h2>
       <div>
-        {data.contents.map((item, index) => (
-          <a key={index} href={item.linkUrl}>
-            <strong total={item.total}>{item.total}</strong>
-            <em>{item.title}</em>
+        {item.contents.map((anchor, index) => (
+          <a key={index} href={anchor.linkUrl}>
+            <strong total={anchor.total}>{anchor.total}</strong>
+            <em>{anchor.title}</em>
           </a>
         ))}
       </div>
-      <a href={data.linkUrl}>전체</a>
+      <a href={item.linkUrl}>전체</a>
     </StyledOrder>
-  );
+  ));
 };
 
 export default MainOrder;

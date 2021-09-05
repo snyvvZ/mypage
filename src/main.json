@@ -105,7 +105,7 @@
         ]
       },
       {
-        "type": "orderClaim",
+        "type": "order",
         "title": "취소/교환/환불",
         "linkUrl": "https://m.store.musinsa.com/app/mypage/clm_list_opt",
         "contents": [
